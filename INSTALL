@@ -1,0 +1,6 @@
+- Get & install the latest graphlcd-base library from
+http://projects.vdr-developer.org/projects/graphlcd
+- In the glcdprocdriver source directory:
+    - Run 'make' and 'make install'.
+- Run 'ldconfig'.
+- proceed with building LCDproc >= 0.5.x.

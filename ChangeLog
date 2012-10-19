@@ -1,0 +1,45 @@
+Key:
+     - Something removed
+     + Something added
+     * Something changed / fixed
+
+Version 0.1.0 (released 2012-10-20)
+ * this version does no longer build with graphlcd-base <= 0.1.9, but with
+   the current "touchcol" branch of graphlcd-base hosted at
+   http://projects.vdr-developer.org/projects/graphlcd;
+ + adopted "touchcol" patch;
+ * some Makefile tuning for generating versioned .so files and symlinks;
+ * updated URLs;
+ * moved hosting of project to GitHub.
+
+Version 0.0.6: (released 2010-04-16)
+ + adopted gcc44 patch from the gentoo maintainers (thanks Robert Buchholz < rbu AT gentoo.org >)
+ * minor changes in compiler and linker flags, especially for allowing debugging
+
+Version 0.0.5: (released 2009-05-28)
+ * adapted for compilation with more recent glibc (inclusion of stdlib.h);
+ * updated INSTALL file;
+
+Version 0.0.4: (released 2007-04-18)
+ + small code cleanups;
+ + applied Makefile modifications according to http://bugs.gentoo.org/173271
+   (thanks to  Robert Buchholz < rbu AT gentoo.org > and
+   Torsten Veller < tove AT gentoo.org > );
+
+Version 0.0.3: (released 2006-10-05)
+ + added  $SONAME to the Makefile (thanks to Robert Buchholz < rbu AT gentoo.org >);
+ - removed LDCONFIG call (thanks to Robert Buchholz < rbu AT gentoo.org >);
+ + added LDCONFIG warning in the Makefile;
+ * commented double declaration of CXXFLAGS in Make.config;
+ * adapted INSTALL file.
+
+Version 0.0.2: (released 2005-05-23)
+ - removed direct Freetype2 dependency, as GLCDprocdriver actually does not use calls directly to
+   Freetype2, and the Freetype2-related code from graphlcd-base should properly log an error if
+   it is called without having built graphlcd-base with freetype support;
+ - removed (commented) some debug syslog output;
+ + added syslog error output if initializing of the "bignum" fonts fails;
+
+Version 0.0.1: (released 2005-05-13)
+ + Initial release
+

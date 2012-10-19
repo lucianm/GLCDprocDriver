@@ -1,0 +1,7 @@
+- provide some graphlcd-base native fonts to be used in the meta driver
+- autoconf/automake/libtool stuff (but is it really necessary for such a small lib?)
+
+Note:
+I'm not very familiar with the latter, so any help would be welcomed, thank you!
+
+Lucian Muresan

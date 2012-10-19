@@ -15,6 +15,8 @@
 
     <header>
       <div class="container">
+      <hl>
+      <span>
         <h1>GLCDprocDriver</h1>
         <h2>GraphLCD adapter layer for the LCDproc &quot;glcdlib&quot; driver</h2>
 
@@ -22,12 +24,17 @@
           <a href="https://github.com/lucianm/GLCDprocDriver/tarball/master" class="btn">Download latest source as .tar.gz</a>
           <a href="https://github.com/lucianm/GLCDprocDriver" class="btn btn-github"><span class="icon"></span>View repository on GitHub</a>
         </section>
+      </span>
+      <span>
+        <img src="images/lcd_256x128.gif"/>
+      </span>
+      </hl>
       </div>
     </header>
 
     <div class="container">
       <section id="main_content">
-        {{ content }}
+      {{ content }}
       </section>
     </div>
   </body>

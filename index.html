@@ -37,8 +37,9 @@
       <h1>GLCDprocDriver</h1>
 <p>GraphLCD adapter layer for the LCDproc &quot;glcdlib&quot; driver
 
+
 </p>
-<h1>Introduction</h1>
+<h2>Introduction</h2>
 <p>GLCDprocDriver is the glue between the graphlcd-base library (from the GraphLCD project
 at <a href="http://projects.vdr-developer.org/projects/show/graphlcd">http://projects.vdr-developer.org/projects/show/graphlcd</a>), which is written in C++,
 and LCDproc&#39;s (<a href="http://www.lcdproc.org">http://www.lcdproc.org</a>) meta-driver &quot;glcdlib&quot;, which extends supported
@@ -52,19 +53,37 @@ displays in LCDproc by those supported through graphlcd-base (but just in text m
 library, as it really only implements the actual meta-driver for LCDproc.
 
 </p>
-<h1>Installation</h1>
-<p>Refer to the INSTALL file in the archive.
-
+<p>The image above shows a 21x5 lcdproc client rendered on the graphlcd-base&#39;s &quot;image&quot; driver
+(FYI, this one creates PBM images in /tmp), which was configured at 256x128 pixel in /etc/graphlcd.conf.
 
 
 </p>
-<p>Lucian Muresan
+<h2>Download</h2>
+<p><a href="https://github.com/lucianm/GLCDprocDriver/downloads">https://github.com/lucianm/GLCDprocDriver/downloads</a>
+Please mind the version descriptions with regard to graphlcd-base compatibility. If you
+really want to try out GLCDprocDriver &gt;= 0.1.0 you have to use graphlcd-base greater than 0.1.9
+or the &quot;touchcol&quot; branch from their Git repository:
+<a href="http://projects.vdr-developer.org/projects/graphlcd-base/repository/show?rev=touchcol">http://projects.vdr-developer.org/projects/graphlcd-base/repository/show?rev=touchcol</a>
+
 
 </p>
-<p><a href="http://projects.vdr-developer.org/projects/graphlcd-base/repository/show?rev=touchcol">http://projects.vdr-developer.org/projects/graphlcd-base/repository/show?rev=touchcol</a>
+<h2>Gentoo ebuilds, unless already available via portage:</h2>
+<p>Add the layman overlay located at <a href="https://github.com/lucianm/gen2ovl-googoo2">https://github.com/lucianm/gen2ovl-googoo2</a>
 
 
+</p>
+<h2>Installation</h2>
+<p>Please refer to the INSTALL file in the source archive or here:
+<a href="https://github.com/lucianm/GLCDprocDriver/raw/master/INSTALL">https://github.com/lucianm/GLCDprocDriver/raw/master/INSTALL</a>
 
+</p>
+<h2>History</h2>
+<p>Please consult the ChangeLog file in the source archive or here:
+<a href="https://github.com/lucianm/GLCDprocDriver/raw/master/ChangeLog">https://github.com/lucianm/GLCDprocDriver/raw/master/ChangeLog</a>
+
+</p>
+<p>&copy; 2005 - 2012 Lucian Muresan
+Last updated: 2012.10.20
 </p>
 
       </section>

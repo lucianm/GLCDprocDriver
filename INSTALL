@@ -1,6 +1,15 @@
 - Get & install the latest graphlcd-base library from
 http://projects.vdr-developer.org/projects/graphlcd
+you should consider enabling FreeType support by uncommenting
+HAVE_FREETYPE2 in Make.config
 - In the glcdprocdriver source directory:
     - Run 'make' and 'make install'.
 - Run 'ldconfig'.
-- proceed with building LCDproc >= 0.5.x.
+- proceed with building LCDproc >= 0.5.x with the "glcdlib" driver enabled;
+
+
+On Gentoo, just use the provided ebuilds from the overlay or mainline portage
+if they are already available. It is advisable to enable the USE flag "truetype".
+Just emerge lcdproc with the USE flag "graphlcd" enabled, this will enable building
+the "glcdlib" driver which then will pull GLCDprocDriver and graphlcd-base as
+dependencies first.

@@ -9,8 +9,11 @@ Version 0.1.0 (released 2012-10-20)
    http://projects.vdr-developer.org/projects/graphlcd;
  + adopted "touchcol" patch;
  * some Makefile tuning for generating versioned .so files and symlinks;
- * updated URLs;
- * moved hosting of project to GitHub.
+ * moved hosting of the project from http://www.muresan.de/graphlcd/lcdproc/
+   to GitHub: http://lucianm.github.com/GLCDprocDriver/
+ * renamed README to README.md and adapted its contents to also be displayed
+   at the "GitHub page" mentioned;
+ * updated URLs.
 
 Version 0.0.6: (released 2010-04-16)
  + adopted gcc44 patch from the gentoo maintainers (thanks Robert Buchholz < rbu AT gentoo.org >)

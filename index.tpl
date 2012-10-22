@@ -20,10 +20,11 @@
         <h1>GLCDprocDriver</h1>
         <h2>GraphLCD adapter layer for the LCDproc &quot;glcdlib&quot; driver</h2>
 
-        <section id="downloads">
-          <a href="https://github.com/lucianm/GLCDprocDriver/tarball/master" class="btn">Latest source as .tar.gz</a>
+        <section id="links">
+          <a href="https://github.com/lucianm/GLCDprocDriver/tarball/master" class="btn btn-github"><span class="icon"></span>Latest source as .tar.gz</a>
           <a href="https://github.com/lucianm/GLCDprocDriver" class="btn btn-github"><span class="icon"></span>Repository</a>
           <a href="https://github.com/lucianm/GLCDprocDriver/wiki" class="btn btn-github"><span class="icon"></span>Wiki</a>
+          <a href="https://github.com/lucianm/GLCDprocDriver/downloads" class="btn btn-github"><span class="icon"></span>Downloads</a>
         </section>
       </span>
       <span>
@@ -41,3 +42,4 @@
     </div>
   </body>
 </html>
+

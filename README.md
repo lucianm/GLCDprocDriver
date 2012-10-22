@@ -62,5 +62,3 @@ https://github.com/lucianm/GLCDprocDriver/raw/master/ChangeLog
 
 
 &copy; 2005 - 2012 Lucian Muresan
-
-Last updated: 2012.10.20

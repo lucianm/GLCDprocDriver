@@ -21,8 +21,9 @@
         <h2>GraphLCD adapter layer for the LCDproc &quot;glcdlib&quot; driver</h2>
 
         <section id="downloads">
-          <a href="https://github.com/lucianm/GLCDprocDriver/tarball/master" class="btn">Download latest source as .tar.gz</a>
-          <a href="https://github.com/lucianm/GLCDprocDriver" class="btn btn-github"><span class="icon"></span>View repository on GitHub</a>
+          <a href="https://github.com/lucianm/GLCDprocDriver/tarball/master" class="btn">Latest source as .tar.gz</a>
+          <a href="https://github.com/lucianm/GLCDprocDriver" class="btn btn-github"><span class="icon"></span>Repository</a>
+          <a href="https://github.com/lucianm/GLCDprocDriver/wiki" class="btn btn-github"><span class="icon"></span>Wiki</a>
         </section>
       </span>
       <span>

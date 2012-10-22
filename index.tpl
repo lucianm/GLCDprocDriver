@@ -36,6 +36,7 @@
     <div class="container">
       <section id="main_content">
       {{ content }}
+        <p>Last updated: 2012.10.22</p>
       </section>
     </div>
   </body>

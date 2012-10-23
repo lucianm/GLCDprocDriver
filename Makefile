@@ -5,12 +5,12 @@
 -include Make.config
 
 
-PROJECT = glcdprocdriver
+MODULE = $(shell grep '\#define GLCDPROC_MODULENAME' glcddriver.h | cut -d' ' -f3)
 VERMAJOR = $(shell grep '\#define GLCDPROC_VER_MAJOR' glcddriver.h | cut -d' ' -f3)
 VERMINOR = $(shell grep '\#define GLCDPROC_VER_MINOR' glcddriver.h | cut -d' ' -f3)
 VERMICRO = $(shell grep '\#define GLCDPROC_VER_MICRO' glcddriver.h | cut -d' ' -f3)
 VERSION = $(VERMAJOR).$(VERMINOR).$(VERMICRO)
-ARCHIVE = $(PROJECT)-$(VERSION)
+ARCHIVE = $(MODULE)-$(VERSION)
 PACKAGE = $(ARCHIVE)
 TMPDIR = /tmp
 

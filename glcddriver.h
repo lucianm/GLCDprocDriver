@@ -19,6 +19,8 @@
 #define GLCDPROC_VER_MINOR 1
 #define GLCDPROC_VER_MICRO 1
 
+#define GLCDPROC_MODULENAME "glcdprocdriver"
+
 class cglcdDriver
 {
 /*

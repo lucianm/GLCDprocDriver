@@ -154,6 +154,8 @@ bool cglcdDriver::Init(	const std::string DisplayName,
 	m_bShowThinBorder = bShowThinBorder;
 	m_bShowDebugFrame = bShowDebugFrame;
 
+	syslog(LOG_DEBUG, "Initializing '%s-%d.%d.%.d' for the 'glcdlib' meta driver...\n", GLCDPROC_MODULENAME, GLCDPROC_VER_MAJOR, GLCDPROC_VER_MINOR, GLCDPROC_VER_MICRO);
+
 	if (GLCD::Config.Load("/etc/graphlcd.conf") == false)
 	{
 		syslog(LOG_ERR, "ERROR loading default graphlcd config file '/etc/graphlcd.conf'!\n");

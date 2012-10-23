@@ -3,6 +3,12 @@ Key:
      + Something added
      * Something changed / fixed
 
+Version 0.1.1 (WIP)
+ * some more debug logging in driver initialization;
+ + added GLCDPROC_VER_MAJOR / _MINOR / _MICRO in glcddriver.h as the only place
+   where the version is maintained, which can be evaluated both in the code and
+   the Makefile.
+
 Version 0.1.0 (released 2012-10-20)
  * this version does no longer build with graphlcd-base <= 0.1.9, but with
    the current "touchcol" branch of graphlcd-base hosted at

@@ -6,9 +6,9 @@
 
 
 PROJECT = glcdprocdriver
-VERMAJOR = 0
-VERMINOR = 1
-VERMICRO = 0
+VERMAJOR = $(shell grep '\#define GLCDPROC_VER_MAJOR' glcddriver.h | cut -d' ' -f3)
+VERMINOR = $(shell grep '\#define GLCDPROC_VER_MINOR' glcddriver.h | cut -d' ' -f3)
+VERMICRO = $(shell grep '\#define GLCDPROC_VER_MICRO' glcddriver.h | cut -d' ' -f3)
 VERSION = $(VERMAJOR).$(VERMINOR).$(VERMICRO)
 ARCHIVE = $(PROJECT)-$(VERSION)
 PACKAGE = $(ARCHIVE)
@@ -52,7 +52,7 @@ uninstall:
 	@echo \**** Run \"$(LDCONFIG)\" yourself if you ran \"make uninstall\" by hand!!
 
 clean:
-	rm -f $(OBJS) $(DEPFILE) *.so *.a *~
+	rm -f $(OBJS) $(DEPFILE) *.so *.so.* *.a *~
 
 dist: clean
 	@-rm -rf $(TMPDIR)/$(ARCHIVE)

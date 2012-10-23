@@ -15,6 +15,10 @@
 
 #define TOTAL_ICONS 22
 
+#define GLCDPROC_VER_MAJOR 0
+#define GLCDPROC_VER_MINOR 1
+#define GLCDPROC_VER_MICRO 1
+
 class cglcdDriver
 {
 /*

@@ -229,10 +229,11 @@ bool cglcdDriver::Init(	const std::string DisplayName,
 	m_pBitmap = new GLCD::cBitmap(m_pDrv->Width(), m_pDrv->Height());
 
 	CalculateDimensions();
+	syslog(LOG_DEBUG, "cglcdDriver::Init: Text Cols x Rows adjusted to %d x %d\n", m_nTextWidth, m_nTextHeight);
 
 	m_nOffsetX = (m_pDrv->Width() - TextWidth() * m_pFont->TotalWidth())/2;
 	m_nOffsetY = (m_pDrv->Height() - TextHeight() * m_pFont->TotalHeight())/2;
-	//syslog(LOG_DEBUG, "cglcdDriver::Init(..): m_nOffsetX = %d; m_nOffsetY = %d\n", m_nOffsetX, m_nOffsetY);
+	syslog(LOG_DEBUG, "cglcdDriver::Init: m_nOffsetX = %d; m_nOffsetY = %d\n", m_nOffsetX, m_nOffsetY);
 
 	if (abs(nPixShiftX) > m_nOffsetX)
 	{
@@ -355,7 +356,8 @@ void cglcdDriver::DrawChar(int x, int y, char data)
 			data,
 			m_pFont,
 			Inversion(GLCD::cColor::White),
-			0
+			Inversion(GLCD::cColor::Black),
+			1
 			);
 }
 
@@ -369,8 +371,9 @@ void cglcdDriver::DrawString(int x, int y, const std::string text)
 			text,
 			m_pFont,
 			Inversion(GLCD::cColor::White),
+			Inversion(GLCD::cColor::Black),
 			false,
-			0
+			1
 			);
 }
 

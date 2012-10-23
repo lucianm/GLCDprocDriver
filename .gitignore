@@ -5,6 +5,7 @@
 
 # Compiled Dynamic libraries
 *.so
+*.so.*
 
 # Compiled Static libraries
 *.lai
@@ -13,3 +14,10 @@
 
 # backup files
 *.bak
+
+# diff files
+*.diff
+*.patch
+
+# other build leftovers
+.dependencies

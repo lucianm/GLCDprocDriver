@@ -19,6 +19,12 @@
 #define GLCDPROC_VER_MINOR 1
 #define GLCDPROC_VER_MICRO 1
 
+/*
+    Make this an empty string for releases, or 'pre', 'alfa', 'beta', 'rc' or similar
+    prefixed by '_' or '-' and maybe followed by a number like "_pre1" for non-releases !!!
+ */
+#define GLCDPROC_VER_SUPPL "_pre1"
+
 #define GLCDPROC_MODULENAME "glcdprocdriver"
 
 class cglcdDriver

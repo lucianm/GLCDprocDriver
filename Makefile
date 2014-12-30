@@ -59,9 +59,9 @@ dist: clean
 	@-rm -rf $(TMPDIR)/$(ARCHIVE)
 	@mkdir $(TMPDIR)/$(ARCHIVE)
 	@cp -a * $(TMPDIR)/$(ARCHIVE)
-	@tar cjf ../$(PACKAGE).tar.bz2 -C $(TMPDIR) $(ARCHIVE) --exclude=.git*
+	@tar czf ../$(PACKAGE).tar.gz -C $(TMPDIR) $(ARCHIVE) --exclude=.git*
 	@-rm -rf $(TMPDIR)/$(ARCHIVE)
-	@echo Distribution package created as ../$(PACKAGE).tar.bz2
+	@echo Distribution package created as ../$(PACKAGE).tar.gz
 
 ### Implicit rules:
 

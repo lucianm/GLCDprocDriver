@@ -50,7 +50,7 @@ void glcddriverRefresh(GlcdDriver* drv, bool refreshAll);
 void glcddriverSetBrightness(GlcdDriver* drv, unsigned int percent);
 unsigned int glcddriverGetBrightness(GlcdDriver* drv);
 void glcddriverInvert(GlcdDriver* drv, bool bInvert);
-void glcddriverDrawText(GlcdDriver* drv, int x, int y, char text[]);
+void glcddriverDrawText(GlcdDriver* drv, int x, int y, const char text[]);
 void glcddriverDrawCharacter(GlcdDriver* drv, int x, int y, char c);
 int glcddriverDrawIcon(GlcdDriver* drv, int x, int y, int icon);
 void glcddriverSetCustomChar(GlcdDriver* drv, int pos, char *pixeldata);

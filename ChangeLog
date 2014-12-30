@@ -8,6 +8,11 @@ Version 0.1.1 (WIP)
  + added GLCDPROC_VER_MAJOR / _MINOR / _MICRO in glcddriver.h as the only place
    where the version is maintained, which can be evaluated both in the code and
    the Makefile.
+ * Github no longer supports uploading distribution source archives, therefore
+   adapted module name spelling in glcddriver.h which is now "GLCDprocDriver" to
+   match the github project, especially because they now offer tagged releases;
+   also aligned archive compression to that of tagged releases, tar.gz.
+ * adapted signature of glcddriverDrawText to const char *
 
 Version 0.1.0 (released 2012-10-20)
  * this version does no longer build with graphlcd-base <= 0.1.9, but with

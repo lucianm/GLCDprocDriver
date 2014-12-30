@@ -128,7 +128,7 @@ void glcddriverInvert(GlcdDriver* drv, bool bInvert)
 	cpp_drv->Invert(bInvert);
 }
 
-void glcddriverDrawText(GlcdDriver* drv, int x, int y, char text[])
+void glcddriverDrawText(GlcdDriver* drv, int x, int y, const char text[])
 {
 	cglcdDriver* cpp_drv = reinterpret_cast<cglcdDriver*>(drv);
 	cpp_drv->DrawString(x, y, text);

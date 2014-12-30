@@ -59,7 +59,7 @@ cglcdDriver::cglcdDriver()
 	for (i = 0; i < TOTAL_ICONS; i++)
 		m_arrIcons[i] = 0;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < TOTAL_DIGITS; i++)
 		m_arrBigNums[i] = 0;
 
 	m_nOffsetX = 0;
@@ -84,7 +84,7 @@ cglcdDriver::~cglcdDriver()
 	int i;
 	for (i = 0; i < TOTAL_ICONS; i++)
 		delete m_arrIcons[i];
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < TOTAL_DIGITS; i++)
 		delete m_arrBigNums[i];
 	delete m_pMyDrvConfig;
 }
@@ -633,12 +633,15 @@ void cglcdDriver::BigNumsInitialize(const std::string FontFile, bool bUseFT)
 		pNumChar = new GLCD::cBitmap(2 * m_pFont->TotalWidth(), 2 * m_pFont->TotalHeight());
 	}
 	int x, y;
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < TOTAL_DIGITS; i++)
 	{
 		GLCD::cBitmap * pBigNum =
 			new GLCD::cBitmap(2 * m_pFont->TotalWidth(), 2 * m_pFont->TotalHeight());
 		pBigNum->Clear();
-		sprintf(tmp, "%d", i);
+		if (i < TOTAL_DIGITS - 1)
+			sprintf(tmp, "%d", i);
+		else
+			sprintf(tmp, "%c", ':'); // BigNum index 10 is colon ':' character in LCDproc now
 		if (bUseFT)
 		{
 			pNumChar = (GLCD::cBitmap *)bnFont.GetCharacter(tmp[0]);
@@ -672,6 +675,15 @@ void cglcdDriver::BigNumsInitialize(const std::string FontFile, bool bUseFT)
 
 void cglcdDriver::DrawBigNum(int x, int num)
 {
+	if (num < 0 || num >= TOTAL_DIGITS)
+	{
+		syslog(
+			LOG_ERR,
+			"ERROR: cglcdDriver::DrawBigNum() -> Invalid BigNum index %d, (valid between 0 and %d), returning immediately ...\n",
+			num,
+			TOTAL_DIGITS - 1 );
+		return;
+	}
 	if (m_pBitmap && m_arrBigNums[num])
 	{
 		int y = (TextHeight() - 2)/2;

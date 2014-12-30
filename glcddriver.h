@@ -15,6 +15,9 @@
 
 #define TOTAL_ICONS 22
 
+// digits from 0 to 9 plus colon character ':'
+#define TOTAL_DIGITS 10 + 1
+
 #define GLCDPROC_VER_MAJOR 0
 #define GLCDPROC_VER_MINOR 1
 #define GLCDPROC_VER_MICRO 1
@@ -23,7 +26,7 @@
     Make this an empty string for releases, or 'pre', 'alfa', 'beta', 'rc' or similar
     prefixed by '_' or '-' and maybe followed by a number like "_pre1" for non-releases !!!
  */
-#define GLCDPROC_VER_SUPPL "_pre2"
+#define GLCDPROC_VER_SUPPL ""
 
 #define GLCDPROC_MODULENAME "GLCDprocDriver"
 
@@ -74,7 +77,7 @@ protected:
 	int m_nBrightness;
 	int m_bInvert;
 	GLCD::cDriverConfig * m_pMyDrvConfig;
-	GLCD::cBitmap * m_arrBigNums[10];
+	GLCD::cBitmap * m_arrBigNums[TOTAL_DIGITS];
 
 private:
 

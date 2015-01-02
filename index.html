@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -21,10 +21,10 @@
         <h2>GraphLCD adapter layer for the LCDproc &quot;glcdlib&quot; driver</h2>
 
         <section id="links">
-          <a href="https://github.com/lucianm/GLCDprocDriver/tarball/master" class="btn btn-github"><span class="icon"></span>Latest source as .tar.gz</a>
+          <a href="https://github.com/lucianm/GLCDprocDriver/tarball/master" class="btn btn-github"><span class="icon"></span>Latest *.tar.gz</a>
           <a href="https://github.com/lucianm/GLCDprocDriver" class="btn btn-github"><span class="icon"></span>Repository</a>
-          <a href="https://github.com/lucianm/GLCDprocDriver/wiki" class="btn btn-github"><span class="icon"></span>Wiki</a>
-          <a href="https://github.com/lucianm/GLCDprocDriver/downloads" class="btn btn-github"><span class="icon"></span>Downloads</a>
+          <a href="https://github.com/lucianm/GLCDprocDriver/downloads" class="btn btn-github"><span class="icon"></span>Old Downloads</a>
+		  <a href="https://github.com/lucianm/GLCDprocDriver/releases" class="btn btn-github"><span class="icon"></span>Releases</a>
         </section>
       </span>
       <span>
@@ -33,74 +33,12 @@
       </hl>
       </div>
     </header>
-
-    <div class="container">
-      <section id="main_content">
-      <h1>GLCDprocDriver</h1>
-<p>GraphLCD adapter layer for the LCDproc &quot;glcdlib&quot; driver
-
-</p>
-<p>Homepage: <a href="http://lucianm.github.com/GLCDprocDriver/">http://lucianm.github.com/GLCDprocDriver/</a>
-
-
-</p>
-<h2>Introduction</h2>
-<p>GLCDprocDriver is the glue between the graphlcd-base library from the
-<a href="http://projects.vdr-developer.org/projects/show/graphlcd">GraphLCD project</a>,
-which is written in C++, and <a href="http://www.lcdproc.org">LCDproc&#39;s</a> meta-driver
-&quot;glcdlib&quot;, which extends supported displays in LCDproc by those supported
-through graphlcd-base (but just in text mode, of course).
-
-</p>
-<p>It is implemented in C++, but provides the necessary wrapper C calls for use by glcdlib.
-
-</p>
-<p>It is NOT intended to provide general C wrapping for the whole graphlcd-base,
-library, as it really only implements the actual meta-driver for LCDproc.
-
-</p>
-<p>The image above shows a 21x5 lcdproc client rendered on the graphlcd-base&#39;s &quot;image&quot; driver
-(FYI, this one creates PBM images in /tmp), which was configured at 256x128 pixel in
-/etc/graphlcd.conf.
-
-
-</p>
-<h2>Download</h2>
-<p><a href="https://github.com/lucianm/GLCDprocDriver/downloads">https://github.com/lucianm/GLCDprocDriver/downloads</a>
-
-</p>
-<p>Please mind the version descriptions with regard to graphlcd-base compatibility.
-
-</p>
-<p>If you really want to try out GLCDprocDriver &gt;= 0.1.0 you have to use
-graphlcd-base greater than 0.1.9 or the <a href="http://projects.vdr-developer.org/projects/graphlcd-base/repository/show?rev=touchcol">&quot;touchcol&quot; branch from their Git
-repository</a>
-
-
-</p>
-<h2>Gentoo ebuilds, unless already available via portage:</h2>
-<p>You may add <a href="https://github.com/lucianm/gen2ovl-googoo2">this layman overlay</a>.
-
-
-</p>
-<h2>Installation</h2>
-<p>Please refer to the <a href="https://github.com/lucianm/GLCDprocDriver/raw/master/INSTALL">INSTALL</a>
-file in the source archive.
-
-
-
-</p>
-<h2>History</h2>
-<p>Please consult the <a href="https://github.com/lucianm/GLCDprocDriver/raw/master/ChangeLog">ChangeLog</a>
-file in the source archive.
-
-</p>
-<p>&copy; 2005 - 2012 Lucian Muresan
-</p>
-
-        <p>Last updated: 2012.10.22</p>
-      </section>
-    </div>
+	<div class="wrapper">
+		<img src="images/spinner.gif" alt="" class="spinner">
+	</div>
+	<script type="text/javascript" src="javascripts/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="javascripts/Markdown.Converter.js"></script>
+	<script type="text/javascript" src="javascripts/convert_README.js"></script>
   </body>
 </html>
 

@@ -12,8 +12,21 @@ body {
 
 .container {
   width: 90%;
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.spinner {
+  display: block;
+  margin: auto;
+  width: 66px;
+  height: 66px;
 }
 
 section {

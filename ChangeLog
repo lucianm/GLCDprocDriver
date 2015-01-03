@@ -3,6 +3,10 @@ Key:
      + Something added
      * Something changed / fixed
 
+Version 0.1.2 (released 2015-01-03)
+ * compensated rendering position of the BigNum semicolon character;
+ * updated README.md.
+
 Version 0.1.1 (released 2014-12-31)
  * workaround a potential crash when BigNums with out of range index (valid are
    only 0-10) are drawn, and introduced colon ':' character to BigNums as well.

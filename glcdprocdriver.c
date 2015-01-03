@@ -1,7 +1,7 @@
 /*
  * "C" wrapper implementation for cglcdDriver
  *
- * (c) 2005 - 2010 Lucian Muresan <lucianm AT users.sourceforge.net>
+ * (c) 2005 - 2015 Lucian Muresan <lucianm AT users.sourceforge.net>
  */
 
 #include <stdio.h>

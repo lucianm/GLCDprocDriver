@@ -2,7 +2,7 @@
  * cglcdDriver, a generic driver based on graphlcd-base, to be used
  * in the LCDproc server
  *
- * (c) 2005 - 2010 Lucian Muresan <lucianm AT users.sourceforge.net>
+ * (c) 2005 - 2015 Lucian Muresan <lucianm AT users.sourceforge.net>
  */
 
 #ifndef _GLCD_DRIVER_H_
@@ -20,7 +20,7 @@
 
 #define GLCDPROC_VER_MAJOR 0
 #define GLCDPROC_VER_MINOR 1
-#define GLCDPROC_VER_MICRO 1
+#define GLCDPROC_VER_MICRO 2
 
 /*
     Make this an empty string for releases, or 'pre', 'alfa', 'beta', 'rc' or similar

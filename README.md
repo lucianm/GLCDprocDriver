@@ -3,7 +3,7 @@ GLCDprocDriver
 
 GraphLCD adapter layer for the LCDproc "glcdlib" driver
 
-Homepage: http://lucianm.github.com/GLCDprocDriver/
+Homepage: http://lucianm.github.io/GLCDprocDriver/
 
 
 Introduction
@@ -25,10 +25,15 @@ The image above shows a 21x5 lcdproc client rendered on the graphlcd-base's "ima
 /etc/graphlcd.conf.
 
 
-Download
---------
+Old Downloads
+-------------
 
 https://github.com/lucianm/GLCDprocDriver/downloads
+
+Releases
+--------
+
+https://github.com/lucianm/GLCDprocDriver/releases
 
 Please mind the version descriptions with regard to graphlcd-base compatibility.
 
@@ -57,4 +62,4 @@ History
 Please consult the [ChangeLog](https://github.com/lucianm/GLCDprocDriver/raw/master/ChangeLog)
 file in the source archive.
 
-&copy; 2005 - 2012 Lucian Muresan
+&copy; 2005 - 2015 Lucian Muresan

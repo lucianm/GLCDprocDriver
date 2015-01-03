@@ -2,7 +2,7 @@
  * cglcdDriver, a generic driver based on graphlcd-base, to be used
  * in the LCDproc server
  *
- * (c) 2005-2010 Lucian Muresan <lucianm AT users.sourceforge.net>
+ * (c) 2005-2015 Lucian Muresan <lucianm AT users.sourceforge.net>
  */
 #include <stdio.h>
 #include <syslog.h>
@@ -688,7 +688,7 @@ void cglcdDriver::DrawBigNum(int x, int num)
 	{
 		int y = (TextHeight() - 2)/2;
 		m_pBitmap->DrawBitmap(
-			m_nOffsetX + m_nPixShiftX + x*m_pFont->TotalWidth(),
+			m_nOffsetX + m_nPixShiftX + x*m_pFont->TotalWidth() - (num == TOTAL_DIGITS - 1 ? m_pFont->TotalWidth() : 0 ),
 			m_nOffsetY + m_nPixShiftY + y*m_pFont->TotalHeight(),
 			*m_arrBigNums[num],
 			Inversion(GLCD::cColor::White)

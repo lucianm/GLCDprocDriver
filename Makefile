@@ -70,7 +70,7 @@ dist: clean
 
 # Dependencies:
 
-MAKEDEP = g++ -MM -MG
+MAKEDEP = $(CXX) -MM -MG
 DEPFILE = .dependencies
 $(DEPFILE): Makefile
 	@$(MAKEDEP) $(DEFINES) $(INCLUDES) $(OBJS:%.o=%.c) > $@
